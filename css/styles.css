@@ -1,0 +1,209 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
+}
+a {
+    text-decoration-line: none;
+    font-style: normal;
+    color: #434455;
+}
+ul, ol {
+    list-style-type: none;
+}
+button {
+    cursor: pointer;
+}
+/*============ Page navigation ============*/
+.logo-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#2e2f42;
+}
+.logo-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#4d5ae5;
+}
+.nav-menu {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.nav-menu-a {
+    color: #2e2f42;
+}
+.nav-menu-item {
+    color: #2e2f42;
+}
+.nav-menu-item :hover ,
+.nav-menu-item :focus {
+    color:#404bbf;
+}
+/*============ /Page navigation ============*/
+
+/*============ Adress contacts ============*/
+
+.adress-menu {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.adress-info :hover,
+.adress-info :focus {
+    color: #404bbf;
+}
+
+/*============ /Adress contacs ============*/
+
+/*============ Page section hero ============*/
+.section-hero-line {
+    background: #2e2f42;
+}
+.title-section-hero {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
+.hero-button {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    font-weight: 500;
+    background: #4d5ae5;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color:#404bbf;
+}
+/*============ /Page section hero ============*/
+
+/*============ Page section our benefits ============*/
+.title-hiden {
+    visibility: hidden;
+}
+.section-benef-line {
+    background-color: #F4F4FD;
+}
+    
+.section-benefits {
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.11;
+}
+.title-benefits {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-size: 20px;
+    background-color: #fff;
+    color: #2e2f42;
+}
+.text-benefits {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+/*============ /Page section our benefits ============*/
+
+/*============ Page section our team ============*/
+.title-our-team {
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.11;
+    color: #2e2f42;
+}
+.our-team-bg {
+    background-color: #F4F4FD;
+}
+.text-our-team {
+    background-color: #FFFFFF;
+}
+.team-names {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-size: 20px;
+    color: #2e2f42;
+}
+.team-info {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 1.5;
+}
+/*============ /Page section our team ============*/
+
+/*============ Page section our portfolio ============*/
+.portfolio-content {
+    background-color: #F4F4FD;
+}
+.portfolio-bg {
+    background-color: #FFFFFF;
+}
+.title-portfolio {
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1.11;
+    color: #2e2f42;
+}
+.portfolio-name {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-size: 20px;
+    color: #2e2f42;
+}
+.portfolio-info {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+/*============ /Page section our portfolio ============*/
+
+/*============ Page section footer ============*/
+.footer-bg {
+    background: #2e2f42;
+}
+.footer-text {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    line-height: 1.5;
+}
+.logo-text-ft {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
+}
+/*============ /Page section footer ============*/
