@@ -8,13 +8,37 @@ a {
     font-style: normal;
     color: #434455;
 }
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.header-line {
+    border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+    display: flex;
+    align-items: center;
 }
 button {
     cursor: pointer;
 }
 /*============ Page navigation ============*/
+
+
 .logo-title {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -32,16 +56,27 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:#4d5ae5;
+    margin-right: 76px;
 }
+
 .nav-menu {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
 }
 .nav-menu-a {
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 .nav-menu-item {
     color: #2e2f42;
@@ -60,24 +95,39 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-left: auto;
 }
 .adress-info :hover,
 .adress-info :focus {
     color: #404bbf;
 }
+.address-list {
+    display: flex;
+    gap: 40px;
+}
 
 /*============ /Adress contacs ============*/
 
 /*============ Page section hero ============*/
+
+    
 .section-hero-line {
     background: #2e2f42;
+}
+.hero-container {
+padding-top: 188px;
+padding-bottom: 188px;
 }
 .title-section-hero {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin-bottom: 48px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-button {
     font-family: "Roboto", sans-serif;
@@ -87,6 +137,15 @@ button {
     color: #fff;
     font-weight: 500;
     background: #4d5ae5;
+    box-sizing: border-box;
+    min-width: 169px;
+    height: 56px;
+    padding: 18px 32px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -96,10 +155,16 @@ button {
 
 /*============ Page section our benefits ============*/
 .title-hiden {
-    visibility: hidden;
-}
-.section-benef-line {
-    background-color: #F4F4FD;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
 }
     
 .section-benefits {
@@ -109,19 +174,23 @@ button {
     text-align: center;
     line-height: 1.11;
 }
+.benefits-list {
+    width: calc((100%-3*24px)/4);
+    display: flex;
+    gap: 24px;
+}
 .title-benefits {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     font-size: 20px;
-    background-color: #fff;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .text-benefits {
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
-    background-color: #fff;
 }
 
 /*============ /Page section our benefits ============*/
@@ -134,12 +203,23 @@ button {
     text-align: center;
     line-height: 1.11;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 .our-team-bg {
     background-color: #F4F4FD;
 }
 .text-our-team {
     background-color: #FFFFFF;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+.team-box {
+    max-width: 264px;
+    height: 380px;
+    border-radius: 0 0 4px 4px;
+    background: #FFFFFF;
 }
 .team-names {
     font-weight: 500;
