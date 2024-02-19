@@ -18,7 +18,7 @@ ul, ol {
     padding: 0;
 }
 .container {
-    max-width: 1128px;
+    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -32,9 +32,13 @@ ul, ol {
 .header-container {
     display: flex;
     align-items: center;
+    max-width: 1158px;
 }
 button {
     cursor: pointer;
+}
+img {
+    display: block;
 }
 /*============ Page navigation ============*/
 
@@ -115,8 +119,7 @@ button {
     background: #2e2f42;
 }
 .hero-container {
-padding-top: 188px;
-padding-bottom: 188px;
+padding: 188px 0;
 }
 .title-section-hero {
     font-size: 56px;
@@ -168,7 +171,7 @@ padding-bottom: 188px;
     
 .benefits-list {
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 .benefits-item {
     width: calc((100% - 72px) / 4);
@@ -215,6 +218,9 @@ padding-bottom: 188px;
 .team-box {
     background: #FFFFFF;
 }
+.team-list-item {
+    padding: 32px 0;
+}
 .team-names {
     font-weight: 500;
     line-height: 1.2;
@@ -240,7 +246,6 @@ padding-bottom: 188px;
 }
 .portfolio-bg {
     background-color: #FFFFFF;
-    border-bottom: 1px solid #e7e9fc;
     width: calc((100% - 2 * 24px) / 3);
 }
 .title-portfolio {
@@ -257,6 +262,11 @@ padding-bottom: 188px;
     column-gap: 24px;
     row-gap: 48px;
     flex-wrap: wrap;
+}
+.name-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-name {
     font-weight: 500;
@@ -281,18 +291,19 @@ padding-bottom: 188px;
 /*============ Page section footer ============*/
 .footer-bg {
     background: #2e2f42;
+    padding: 100px 0;
 }
-.logo-footer {
-    padding-top: 100px;
-}
+
 .footer-text {
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     width: 264px;
     line-height: 1.5;
-    padding-bottom: 100px;
-    padding-top: 16px;
+}
+.logo-text {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .logo-text-ft {
     font-family: "Raleway", sans-serif;
