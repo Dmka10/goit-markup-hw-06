@@ -236,6 +236,7 @@ img {
     background-color: #FFFFFF;
     width: calc((100% - 3 * 24px) / 4);
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-box {
     background: #FFFFFF;
@@ -258,6 +259,10 @@ img {
     border-radius: 50%;
     background-color: #4d5ae5;
     fill: #fff;
+}
+.team-info-link:hover,
+.team-info-link:focus {
+    background-color: #404bbf;
 }
 .team-names {
     font-weight: 500;
@@ -327,7 +332,9 @@ img {
     background: #2e2f42;
     padding: 100px 0;
 }
+/* .footer-container {
 
+} */
 .footer-text {
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -336,7 +343,7 @@ img {
     line-height: 1.5;
 }
 .logo-text {
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
 }
 .logo-text-ft {
@@ -347,5 +354,42 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+}
+.social-link {
+    display: block;
+    width: 208px;
+    height: 80px;
+    justify-items: center;
+    align-items: center;
+}
+.footer-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 16px;
+}
+.info-link-ft{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.team-info-link-ft{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    fill: #fff;
+    justify-content: center;
+}
+.team-info-link-ft:hover,
+.team-info-link-ft:focus {
+    background-color: #31d0aa;
 }
 /*============ /Page section footer ============*/
