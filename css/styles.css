@@ -82,6 +82,13 @@ img {
     padding: 24px 0;
     display: block;
 }
+.underline {
+    border-radius: 2px;
+    background: #404bbf;
+    height: 4px;
+    width: 48px;
+    display: block;
+}
 .nav-menu-item {
     color: #2e2f42;
 }
@@ -114,10 +121,15 @@ img {
 
 /*============ Page section hero ============*/
 
-    
-.section-hero-line {
+.hero-container {
+    width: 1440px;
+    height: 600px;
     background: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 188px 0;
+    
 }
 .title-section-hero {
     font-size: 56px;
@@ -174,6 +186,17 @@ img {
 .benefits-item {
     width: calc((100% - 72px) / 4);
 }
+.svg-box {
+    border: 1px solid #8e8f99;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
 .title-benefits {
     font-weight: 500;
     line-height: 1.2;
@@ -181,6 +204,7 @@ img {
     font-size: 20px;
     color: #2e2f42;
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 .text-benefits {
     font-size: 16px;
@@ -217,7 +241,23 @@ img {
     background: #FFFFFF;
 }
 .team-list-item {
-    padding: 32px 0;
+    padding-bottom: 32px;
+}
+.info-link {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 24px;
+}
+.team-info-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    fill: #fff;
 }
 .team-names {
     font-weight: 500;
@@ -234,7 +274,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     line-height: 1.5;
-    padding-bottom: 32px;
+    padding-bottom: 8px;
 }
 /*============ /Page section our team ============*/
 
@@ -273,15 +313,11 @@ img {
     font-size: 20px;
     color: #2e2f42;
     margin-bottom: 8px;
-    margin-top: 32px;
-    margin-left: 16px;
 }
 .portfolio-info {
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
-    margin-bottom: 32px;
-    margin-left: 16px;
 }
 
 /*============ /Page section our portfolio ============*/
