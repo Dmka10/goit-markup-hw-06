@@ -210,8 +210,9 @@ img {
     background: #f4f4fd;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 8px;
 }
 .title-benefits {
     font-weight: 500;
@@ -220,7 +221,6 @@ img {
     font-size: 20px;
     color: #2e2f42;
     margin-bottom: 8px;
-    margin-top: 8px;
 }
 .text-benefits {
     font-size: 16px;
