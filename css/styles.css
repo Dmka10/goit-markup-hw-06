@@ -95,6 +95,7 @@ img {
 .nav-menu-item :hover ,
 .nav-menu-item :focus {
     color:#404bbf;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*============ /Page navigation ============*/
 
@@ -162,6 +163,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
     background-color:#404bbf;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*============ /Page section hero ============*/
 
@@ -263,6 +265,7 @@ img {
 .team-info-link:hover,
 .team-info-link:focus {
     background-color: #404bbf;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-names {
     font-weight: 500;
@@ -312,7 +315,8 @@ img {
     height: 100%;
     transform: translateY(100%);
 }
-.overlay-pf:hover .overlay {
+.overlay-pf:hover,
+.overlay-pf:focus .overlay {
     transform: translateY(0%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -426,5 +430,6 @@ img {
 .team-info-link-ft:hover,
 .team-info-link-ft:focus {
     background-color: #31d0aa;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*============ /Page section footer ============*/
