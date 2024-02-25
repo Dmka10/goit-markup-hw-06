@@ -290,6 +290,9 @@ img {
 .portfolio-bg {
     background-color: #FFFFFF;
     width: calc((100% - 2 * 24px) / 3);
+
+}
+.overlay-pf {
     position: relative;
     overflow: hidden;
 }
@@ -299,7 +302,7 @@ img {
     ;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.cashless-payment-overlay {
+.overlay {
     position: absolute;
     content: "";
     top: 0;
@@ -309,7 +312,7 @@ img {
     height: 100%;
     transform: translateY(100%);
 }
-.pf-link:hover .cashless-payment-overlay {
+.overlay-pf:hover .overlay {
     transform: translateY(0%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
