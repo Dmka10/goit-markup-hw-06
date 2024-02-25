@@ -290,6 +290,37 @@ img {
 .portfolio-bg {
     background-color: #FFFFFF;
     width: calc((100% - 2 * 24px) / 3);
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-bg:hover,
+.portfolio-bg:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08)
+    ;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cashless-payment-overlay {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.pf-link:hover .cashless-payment-overlay {
+    transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-overlay {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 .title-portfolio {
     font-size: 36px;
@@ -332,9 +363,10 @@ img {
     background: #2e2f42;
     padding: 100px 0;
 }
-/* .footer-container {
-
-} */
+.footer-container {
+    display: flex;
+}
+/* .logo-link-ft {}  */
 .footer-text {
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -359,8 +391,7 @@ img {
     display: block;
     width: 208px;
     height: 80px;
-    justify-items: center;
-    align-items: center;
+    margin-left: 120px;
 }
 .footer-title {
     font-family: "Roboto", sans-serif;
@@ -377,6 +408,7 @@ img {
     justify-items: center;
     align-items: center;
     flex-wrap: wrap;
+    column-gap: 16px;
 }
 .team-info-link-ft{
     display: flex;
