@@ -263,12 +263,6 @@ img {
 .team-list-item {
     padding-bottom: 32px;
 }
-.info-link {
-    display: flex;
-    padding-left: 16px;
-    padding-right: 16px;
-    gap: 24px;
-}
 .social-list {
     display: flex;
     justify-content: center;
