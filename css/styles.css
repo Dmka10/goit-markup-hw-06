@@ -134,18 +134,19 @@ img {
 /*============ /Adress contacs ============*/
 
 /*============ Page section hero ============*/
-
-.hero-container {
+.hero-section {
     max-width: 1440px;
-    background-position: center;
     height: 600px;
     background: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 188px 0;
-    
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 .title-section-hero {
     font-size: 56px;
     line-height: 1.07;
@@ -241,9 +242,13 @@ img {
     color: #2e2f42;
     margin-bottom: 72px;
 }
+.our-team-list {
+    display: flex;
+}
 .team-list {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 .our-team-bg {
     background-color: #F4F4FD;
