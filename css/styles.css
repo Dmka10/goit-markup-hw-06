@@ -256,7 +256,7 @@ img {
     width: calc((100% - 3 * 24px) / 4);
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .team-box {
     background: #FFFFFF;
@@ -299,6 +299,7 @@ img {
     width: 40px;
     height: 40px;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-info-link {
     display: flex;
@@ -308,7 +309,7 @@ img {
     height: 100%;
     border-radius: 50%;
     background-color: #4d5ae5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .icons-svg {
     width: 16px;
@@ -347,19 +348,17 @@ img {
     width: 100%;
     height: 100%;
     transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay:hover .text-overlay {
     transform: translateY(0%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-overlay {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 40px 32px;
 }
 .title-portfolio {
     font-size: 36px;
@@ -404,8 +403,11 @@ img {
 }
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
-/* .logo-link-ft {}  */
+.logo-link-ft {
+    margin-right: 120px;
+}
 .footer-text {
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -432,7 +434,6 @@ img {
     display: block;
     width: 208px;
     height: 80px;
-    margin-left: 120px;
 }
 .footer-title {
     font-family: "Roboto", sans-serif;
@@ -446,24 +447,32 @@ img {
 }
 .info-link-ft{
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 16px;
 }
-.team-info-link-ft{
+.ft-items {
     display: flex;
-    align-items: center;
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-info-link-ft{
+    display: flex;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: #4d5ae5;
-    fill: #fff;
     justify-content: center;
+    align-items: center;
 }
 .team-info-link-ft:hover,
 .team-info-link-ft:focus {
     background-color: #31d0aa;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ft-svg {
+    fill: #f4f4fd;
 }
 /*============ /Page section footer ============*/
