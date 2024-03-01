@@ -275,7 +275,6 @@ img {
     font-size: 20px;
     color: #2e2f42;
     margin-bottom: 8px;
-    padding-top: 32px;
 }
 
 .team-info {
@@ -387,11 +386,14 @@ img {
     font-size: 20px;
     color: #2e2f42;
     margin-bottom: 8px;
+    margin-left: 0;
+    margin-top: 0;
 }
 .portfolio-info {
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    margin-bottom: 0;
 }
 
 /*============ /Page section our portfolio ============*/
