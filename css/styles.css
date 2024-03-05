@@ -471,3 +471,296 @@ img {
     fill: #f4f4fd;
 }
 /*============ /Page section footer ============*/
+
+/*============ Backdrop section ============*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+/*============ /Backdrop section ============*/
+
+/*============ Modal window ============*/
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 24px;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: #2e2f42;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn:hover,
+.close-btn:focus {
+   background-color: #404bbf;
+   fill: #fff;
+   border: none;
+}
+.modal-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    font-weight: 500;
+    max-width: 360px;
+    margin-bottom: 16px;
+    margin-top: 48px;
+}
+/*============ /Modal window ============*/
+
+/*============ Modal form ============*/
+.modal-form {
+    border-radius: 4px;
+    height: 336px;
+    width: 360px;
+}
+.form-label-field {
+    margin-bottom: 8px;
+}
+
+.label-form {
+    margin-bottom: 4px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    font-size: 12px;
+}
+.form-input-field {
+    position: relative;
+}
+.input-form {
+    width: 100%;
+    padding-left: 38px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;  
+    height: 40px;
+}
+.input-form:hover,
+.input-form:focus {
+    border: 1px solid #4d5ae5;
+    outline: transparent;
+}
+.input-form:focus + .user-name-icon {
+    fill: #4d5ae5;
+}
+.user-name-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 24px;
+}
+.input-form:focus + .user-phone-icon {
+    fill: #4d5ae5;
+}
+.user-phone-icon {
+    position: absolute;
+    left: 16px;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 18px;
+    height: 24px;
+}
+.input-form:focus + .user-email-icon {
+    fill: #4d5ae5;
+}
+.user-email-icon {
+    position: absolute;
+    left: 16px;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 18px;
+    height: 24px;
+}
+.form-label-field-comment {
+    margin-bottom: 16px;
+}
+
+.input-comment {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+.input-comment:hover,
+.input-comment:focus {
+    border: 1px solid #4d5ae5;
+    outline: transparent;
+}
+
+.input-comment::placeholder {
+    font-weight: 400;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    font-size: 12px;
+}
+.form-label-field-checkbox {
+    margin-bottom: 24px;
+    height: 16px;
+}
+
+.form-label-checkbox {
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-own-checkbox-icon {
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    fill: transparent;
+}
+.privacy-checkbox:checked + .form-label-checkbox .form-own-checkbox-icon {
+    background-color: #404bbf;
+    border: 1px solid #404bbf;
+    fill: #f4f4fd;;
+}
+
+.privacy-policy-text {
+    line-height: 1.33333;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+    text-decoration: underline;
+    text-align: center;
+}
+.checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
+}
+
+.btn-form-submit {
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*============ /Modal form ============*/
+
+/*============ Footer Subscribe ============*/
+.ft-subscribe {
+    width: 453px;
+    height: 80px;
+    margin-left: 80px;
+}
+
+.ft-subscribe-text {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.ft-subscribe-form {
+ display: flex;
+}
+
+.ft-email {
+    border: 1px solid #fff;
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    color: #fff;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    padding-left: 16px;
+}
+
+
+.ft-email::placeholder {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    line-height: 2;
+}
+
+.ft-subscribe-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    background: #4d5ae5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+.ft-subscribe-btn-icon {
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/*============ Footer /Subscribe ============*/
