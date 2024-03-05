@@ -640,8 +640,11 @@ img {
     justify-content: center;
     align-items: center;
     fill: transparent;
+    margin-right: 8px;
 }
 .form-own-checkbox-icon {
+    width: 16px;
+    height: 16px;
 }
 .privacy-checkbox:checked + .form-label-checkbox .form-own-checkbox {
     background-color: #404bbf;
