@@ -449,7 +449,7 @@ img {
 }
 @media screen and (min-width: 1158px) {
     .container-team {
-            max-width: 1400px;
+            max-width: 1158px;
         }
 
 .text-our-team {
@@ -548,7 +548,7 @@ img {
 }
 @media screen and (min-width: 1158px) {
 .container-portfolio {
-    max-width: 1440px;
+    max-width: 1158px;
 }
 .portfolio-bg {
     width: calc((100% - 2 * 24px) / 3);
@@ -571,6 +571,7 @@ img {
 @media screen and (min-width: 320px) {
     .footer-bg {
     background: #2e2f42;
+    max-width: 1440px;
 }
 .footer-container {
     max-width: 477px;
@@ -713,7 +714,7 @@ img {
 }
 @media screen and (min-width: 768px) {
     .footer-container {
-    max-width: 1024px;
+    max-width: 768px;
     align-items: baseline;
     justify-content: left;
     padding-left: 108px;
@@ -760,7 +761,7 @@ text-align: left;
     
 .footer-container {
     padding: 100px 15px;
-    max-width: 1440px;
+    max-width: 1158px;
     gap: 0;
 }    
 .logo-link-ft {
